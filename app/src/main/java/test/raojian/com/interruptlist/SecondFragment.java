@@ -104,7 +104,7 @@ public class SecondFragment extends Fragment {
 
             @Override
             public void onAnimationEnd(Animator animator) {
-                handler.postDelayed(outRun, 4000);
+                handler.postDelayed(inRun, 4000);
             }
 
             @Override
@@ -148,7 +148,7 @@ public class SecondFragment extends Fragment {
 
             @Override
             public void onAnimationEnd(Animator animator) {
-                handler.postDelayed(inRun, 4000);
+                handler.postDelayed(outRun, 4000);
             }
 
             @Override
