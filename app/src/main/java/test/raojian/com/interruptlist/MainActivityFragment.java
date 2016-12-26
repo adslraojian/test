@@ -1,7 +1,11 @@
 package test.raojian.com.interruptlist;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Message;
 import android.support.v4.app.Fragment;
+import android.text.TextUtils;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -52,6 +56,14 @@ public class MainActivityFragment extends Fragment {
 
         };
 
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getActivity(), MainSecondActivity.class);
+                startActivity(i);
+
+            }
+        });
     }
 
     class MyAdapter extends BaseAdapter {
